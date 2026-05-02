@@ -1,0 +1,219 @@
+:root {
+    --azul-principal: #1f2a44;
+    --azul-secundario: #2e3f66;
+    --dorado: #c9a24a;
+    --cafe-claro: #a67c52;
+    --cafe-oscuro: #5a3e2b;
+    --blanco: #bed7e2;
+    --gris-fondo: #000c35;
+}
+
+/*-------------------------------*/
+
+
+body {
+
+    background: red;
+}
+
+p {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #3fc95d;
+}
+
+/* HEADER */
+.header {
+    background: var(--azul-principal);
+    color: var(--blanco);
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid var(--dorado);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--gris-fondo);
+}
+/* CONTENEDOR */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* TARJETAS */
+.card {
+    background: var(--blanco);
+    width: 220px;
+    margin: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border-top: 4px solid var(--dorado);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGEN */
+.card img {
+    width: 100%;
+}
+
+/* TEXTO */
+.card h3 {
+    color: var(--azul-principal);
+}
+
+.card p {
+    color: var(--cafe-oscuro);
+}
+
+/* BOTÓN */
+.boton {
+    background: var(--azul-secundario);
+    color: var(--blanco);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: var(--dorado);
+    color: black;
+}
+/*-----------------------------------------------------------------------------*/
+
+.logo {
+    border-radius: 50%;
+    border: 2px solid var(--dorado);
+}
+
+.header {
+    background: linear-gradient(135deg, #111, #333);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.btn-header {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-header:hover {
+    background: #ddd;
+}
+/*-------------------------------------------------------------------------------*/
+  .card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 0.5s ease forwards;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*------------------------------------------------------------------------*/
+.boton {
+    background: #0f172a;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #1e293b;
+    transform: scale(1.05);
+}
+/*---------------------LOGO NICO---------------------------*/
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    margin: 5px;
+    font-size: 28px;
+}
+ /*--------------------------------------------*/
+ .logo {
+    width: 120px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+/* ----------------------- CELULAR------------------- */
+@media (max-width: 600px) {
+
+    .header {
+        padding: 30px 10px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+/*------SLIDER-----*/
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.slides {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+.slide {
+    height: 300px;
+    object-fit: cover;
+}
