@@ -3,16 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const contenedor = document.getElementById("productos");
 
      const productos = [
-        { nombre: "Silla 1", precio: 185, imagen: "https://via.placeholder.com/220", descripcion: "Silla cómoda ideal para oficina" },
-        { nombre: "Silla 2", precio: 160, imagen: "https://via.placeholder.com/220", descripcion: "Silla resistente para uso rudo" },
-        { nombre: "Silla 3", precio: 150, imagen: "https://via.placeholder.com/220", descripcion: "Diseño elegante para sala" },
-        { nombre: "Silla 4", precio: 600, imagen: "https://via.placeholder.com/220", descripcion: "Perfecta para gamers" },
-        { nombre: "Silla 5", precio: 2200, imagen: "https://via.placeholder.com/220", descripcion: "Minimalista y ligera" },
-        { nombre: "Silla 6", precio: 2500, imagen: "https://via.placeholder.com/220", descripcion: "Alta calidad y durabilidad" },
-        { nombre: "Silla 7", precio: 2700, imagen: "https://via.placeholder.com/220", descripcion: "Diseño moderno" },
-        { nombre: "Silla 8", precio: 3000, imagen: "https://via.placeholder.com/220", descripcion: "Super cómoda" },
-        { nombre: "Silla 9", precio: 3200, imagen: "https://via.placeholder.com/220", descripcion: "Ideal para oficina" }
-    ];
+    { nombre: "Silla color azul claro", precio: 150, imagen: "img/silla1.jpg", descripcion: "Silla cómoda ideal para aventos" },
+    { nombre: "Silla color azul cielo", precio: 150, imagen: "img/silla2.jpg", descripcion: "Silla resistente para uso rudo" },
+    { nombre: "Silla color azul marino", precio: 150, imagen: "img/silla3.jpg", descripcion: "Diseño elegante para sala" },
+    { nombre: "Silla monobloque color blanco", precio:150, imagen: "img/silla4.jpg", descripcion: "Perfecta para gamers" },
+    { nombre: "Silla de coca color rojo", precio: 180, imagen: "img/silla5.jpg", descripcion: "Minimalista y ligera" },
+    { nombre: "Mesa de coca con 4 sillas incluidas color rojo ", precio: 600, imagen: "img/silla6.jpg", descripcion: "Alta calidad y durabilidad" },
+    { nombre: "Mesa con 4 sillas incluidas color azul marino", precio: 600, imagen: "img/silla7.jpg", descripcion: "Diseño moderno" },
+    { nombre: "Silla 8", precio: 3000, imagen: "img/silla8.jpg", descripcion: "Super cómoda por muchoooooo" },
+    { nombre: "Silla 9", precio: 3200, imagen: "img/silla9.jpg", descripcion: "Ideal para oficina" }
+];
 
     productos.forEach(producto => {
         const card = `
@@ -37,14 +37,14 @@ function verMas(nombre) {
 function verMas(nombre) {
 
     const productos = [
-        { nombre: "Silla 1", descripcion: "Silla cómoda ideal para oficina" },
+        { nombre: "Silla 1", descripcion: "Silla cómoda ideal para la oficina" },
         { nombre: "Silla 2", descripcion: "Silla resistente para uso rudo" },
         { nombre: "Silla 3", descripcion: "Diseño elegante para sala" },
         { nombre: "Silla 4", descripcion: "Perfecta para gamers" },
         { nombre: "Silla 5", descripcion: "Minimalista y ligera" },
         { nombre: "Silla 6", descripcion: "Alta calidad y durabilidad" },
         { nombre: "Silla 7", descripcion: "Diseño moderno" },
-        { nombre: "Silla 8", descripcion: "Super cómoda" },
+        { nombre: "Silla 8", descripcion: "Super cómoda por muchoooooo" },
         { nombre: "Silla 9", descripcion: "Ideal para oficina" }
     ];
 
@@ -67,3 +67,4 @@ function mostrarSlide() {
 }
 
 setInterval(mostrarSlide, 3000);
+
